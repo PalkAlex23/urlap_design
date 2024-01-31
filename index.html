@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Űrlap - Sz-M. A.</title>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+    <main>
+        <fieldset>
+            <legend>regisztráció</legend>
+            <label for="nev">felhasználónév</label>
+            <input type="text" name="nev" id="ne" placeholder="csak ékezetmentes betűk">
+            <br>
+            <label for="jelszo">jelszó</label>
+            <input type="text" name="jelszo" id="jel" placeholder="min. 3 karakter">
+            <br>
+            <label for="email">e-mail cím</label>
+            <input type="text" name="email" id="ema" placeholder="vmi@vmi.hu">
+            <br>
+        </fieldset>
+        <fieldset>
+            <legend>születés</legend>
+            <label for="szul">születési dátum</label>
+            <input type="date" name="szul" id="dat">
+            <fieldset id="tarolo">
+                <legend id="kis">
+                    személyes
+                </legend>
+                <div class="elem">
+                    <input type="checkbox" name="angol" id="angol">
+                    <label for="angol">angol</label>
+                    <input type="checkbox" name="nemet" id="nemet">
+                    <label for="nemet">német</label>
+                </div>
+                <div class="elem">
+                    <label for="szak">Választott szak:</label>
+                </div>
+                <div class="elem">
+                    <input type="radio" name="nem" id="ferfi">
+                    <label for="nem">férfi</label>
+                    <input type="radio" name="nem" id="no">
+                    <label for="nem">nő</label>
+                </div>
+            </fieldset>
+            <input type="submit" value="Küldés">
+        </fieldset>
+    </main>
+</body>
+</html>
